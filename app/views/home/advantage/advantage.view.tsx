@@ -46,8 +46,8 @@ const Advantage = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>the express 4x4 advantage</h1>
       <div className={styles.items}>
-        {advantageItemData.map((item) => {
-          return <AdvantageItem {...item} key={item.title} />;
+        {advantageItemData.map((item, i) => {
+          return <AdvantageItem {...item} key={i} />;
         })}
       </div>
       <Button text="Rent Trucks Now" href="/vehicle-lineup" />

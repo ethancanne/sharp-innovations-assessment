@@ -11,9 +11,20 @@
   justify-content: space-between;
   gap: 10px;
   color: globals.$colorWhite;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+
+  @include globals.mobile {
+    padding: 5px 0 5px 5px;
+  }
   .icon {
     padding: 10px;
     height: 20px;
+
+    @include globals.mobile {
+      padding: 5px 0 5px 5px;
+    }
 
     display: flex;
     align-items: center;

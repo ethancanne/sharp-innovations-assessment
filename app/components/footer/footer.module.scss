@@ -7,11 +7,27 @@
     align-items: flex-start;
     justify-content: center;
     gap: 80px;
+    @include globals.mobile {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .logo {
+      @include globals.mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
     .infoItem {
       display: flex;
       flex-direction: column;
       gap: 15px;
       font-size: globals.$fz-xs;
+
+      @include globals.mobile {
+        width: 100%;
+      }
 
       .title {
         color: globals.$colorGreen;

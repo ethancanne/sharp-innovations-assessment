@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './lineup-list.module.scss';
+import Button from '@/app/components/button/button.component';
 
 type VehicleProps = {
   image: string;
@@ -64,10 +65,15 @@ type Props = {
 
 const LineupList = (props: Props) => {
   return (
-    <div className={styles.container}>
-      {props.vehicleList.map((v) => (
-        <Vehicle {...v} key={v.title} />
-      ))}
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        {props.vehicleList.map((v, i) => (
+          <Vehicle {...v} key={i} />
+        ))}
+      </div>
+      <div className={styles.buttonContainer}>
+        <Button text="Reserve Today" href="/contact" />
+      </div>
     </div>
   );
 };

@@ -9,6 +9,17 @@
   position: relative;
   margin-bottom: 100px;
 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include globals.mobile {
+    height: 400px;
+    margin-bottom: 70px;
+    padding: 30px;
+  }
+
   &::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.4);
@@ -17,10 +28,7 @@
     position: absolute;
     top: 0;
   }
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
+
   .contentContainer {
     position: relative;
 
@@ -31,6 +39,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @include globals.mobile {
+      width: 340px;
+    }
 
     .headerText {
       text-transform: uppercase;
@@ -38,6 +49,9 @@
       font-weight: 900;
       font-style: italic;
       margin-bottom: 10px;
+      @include globals.mobile {
+        font-size: globals.$fz-md;
+      }
       span {
         color: globals.$colorGreen;
       }
@@ -53,7 +67,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    bottom: -160px;
     width: 45vw;
+    .car2 {
+      margin-left: -90px;
+    }
+    .car1 {
+      margin-top: 60px;
+    }
+
+    @include globals.mobile {
+      bottom: -190px;
+      width: 20vw;
+
+      .car1 {
+        display: none;
+      }
+      .car2 {
+        width: 500px;
+        margin: 0;
+      }
+    }
   }
 }

@@ -6,10 +6,19 @@
   padding: 0 30px 0 30px;
   height: 100px;
 
+  @include globals.mobile {
+    height: 80px;
+  }
+
   .logoContainer {
     flex: 0.3;
     display: flex;
     justify-content: center;
+
+    @include globals.mobile {
+      flex: 1;
+      justify-content: flex-start;
+    }
   }
   .navContainer {
     flex: 1;
@@ -18,6 +27,7 @@
     flex-direction: column;
 
     gap: 14px;
+
     .contact {
       display: flex;
       align-items: center;
@@ -25,6 +35,9 @@
       font-size: globals.$fz-xxxs;
       gap: 20px;
 
+      @include globals.mobile {
+        display: none;
+      }
       .login {
         text-transform: uppercase;
         color: globals.$colorLightBlue;
@@ -38,6 +51,10 @@
       display: flex;
       justify-content: flex-end;
       gap: 15px;
+
+      @include globals.mobile {
+        display: none;
+      }
       .navItemContainer {
         .navItem {
           color: globals.$colorWhite;
@@ -78,6 +95,36 @@
             padding-bottom: 7px;
           }
         }
+      }
+
+      &.open {
+        @include globals.mobile {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          z-index: 20;
+          background-color: globals.$colorBlack;
+          padding: 50px;
+          right: 0;
+          .subNavContainer {
+            opacity: 1;
+            position: relative;
+          }
+        }
+      }
+    }
+    .mobileNav {
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      color: globals.$colorWhite;
+      .hamburger {
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      @include globals.mobile {
+        display: flex;
       }
     }
   }

@@ -20,6 +20,9 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 80px;
+    @include globals.mobile {
+      flex-direction: column;
+    }
 
     .item {
       display: flex;
@@ -33,6 +36,10 @@
 
       transform: skew(-10deg);
       padding: 10px 20px 10px 70px;
+      @include globals.mobile {
+        flex-direction: column;
+        width: 60%;
+      }
 
       .itemIcon {
         transform: skew(10deg);

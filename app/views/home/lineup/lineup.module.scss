@@ -9,6 +9,12 @@
   flex-direction: row-reverse;
   gap: 80px;
 
+  @include globals.mobile {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
   .infoContainer {
     flex: 1;
     .title {
@@ -26,6 +32,10 @@
       align-items: center;
       justify-content: flex-end;
       width: 100%;
+
+      @include globals.mobile {
+        justify-content: center;
+      }
     }
   }
 
@@ -35,6 +45,11 @@
     box-shadow: 10px 10px globals.$colorBlue;
     padding: 20px;
     height: 400px;
+
+    @include globals.mobile {
+      width: 90%;
+      min-height: 50vw;
+    }
 
     background-position: center;
     background-repeat: no-repeat;

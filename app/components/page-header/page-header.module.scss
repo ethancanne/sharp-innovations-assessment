@@ -7,6 +7,9 @@
 
   height: 400px;
   position: relative;
+  @include globals.mobile {
+    height: 300px;
+  }
 
   &::before {
     content: '';
@@ -25,7 +28,6 @@
 
     text-align: center;
     color: globals.$colorWhite;
-    width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +41,10 @@
       margin-bottom: 0px;
       span {
         color: globals.$colorGreen;
+      }
+
+      @include globals.mobile {
+        font-size: globals.$fz-md;
       }
     }
     .subTitle {

@@ -15,6 +15,7 @@ const TrustItem = (props: AdvantageItemProps) => {
           width={250}
           height={120}
           alt="trust"
+          layout="responsive"
         ></Image>
       </div>
       <div className={styles.textContainer}>{props.text}</div>
@@ -73,8 +74,8 @@ const Trust = () => {
         </p>
       </div>
       <div className={styles.items}>
-        {trustItemData.map((item) => {
-          return <TrustItem {...item} key={item.text} />;
+        {trustItemData.map((item, i) => {
+          return <TrustItem {...item} key={i} />;
         })}
       </div>
     </div>

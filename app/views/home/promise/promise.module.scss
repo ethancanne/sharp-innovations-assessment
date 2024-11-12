@@ -6,6 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include globals.mobile {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
   gap: 80px;
 
   .infoContainer {
@@ -25,6 +31,10 @@
       align-items: center;
       justify-content: flex-end;
       width: 100%;
+
+      @include globals.mobile {
+        justify-content: center;
+      }
     }
   }
 
@@ -34,6 +44,11 @@
     box-shadow: 10px 10px globals.$colorBlue;
     padding: 20px;
     height: 300px;
+
+    @include globals.mobile {
+      width: 80%;
+      min-height: 50vw;
+    }
 
     background-position: center;
     background-repeat: no-repeat;

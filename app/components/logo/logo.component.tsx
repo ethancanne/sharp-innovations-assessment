@@ -7,6 +7,7 @@ const Logo = () => {
       <Image
         src="/sharp-innovations-assessment/logo.svg"
         alt="logo"
+        className={styles.image}
         width={180}
         height={100}
       />

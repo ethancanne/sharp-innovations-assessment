@@ -7,4 +7,11 @@
   transform: skew(-10deg);
   background-color: globals.$colorWhite;
   box-shadow: globals.$colorGreen 10px 0px;
+
+  @include globals.mobile {
+    width: 130px;
+    .image {
+      width: 100px;
+    }
+  }
 }

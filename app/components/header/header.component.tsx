@@ -4,13 +4,17 @@ import Link from 'next/link';
 import Logo from '../logo/logo.component';
 import vehicleLineupData from '../../data/vehicle-lineup-data.json';
 import { useSearchParams } from 'next/navigation';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoClose } from 'react-icons/io5';
 
 type Props = {};
 
 const Header = (props: Props) => {
   const searchParams = useSearchParams();
   const lineupId = searchParams.get('id');
+
+  const [open, setOpen] = useState(false);
 
   const navigationData = [
     {
@@ -44,7 +48,7 @@ const Header = (props: Props) => {
               <Link href={'/login'}>customer login</Link>
             </div>
           </div>
-          <div className={styles.navigation}>
+          <div className={`${styles.navigation} ${open && styles.open}`}>
             {navigationData.map((item) => {
               return (
                 <div className={styles.navItemContainer}>
@@ -70,6 +74,19 @@ const Header = (props: Props) => {
                 </div>
               );
             })}
+          </div>
+          <div className={styles.mobileNav}>
+            {open ? (
+              <IoClose
+                className={styles.hamburger}
+                onClick={() => setOpen(!open)}
+              />
+            ) : (
+              <RxHamburgerMenu
+                className={styles.hamburger}
+                onClick={() => setOpen(!open)}
+              />
+            )}
           </div>
         </div>
       </div>

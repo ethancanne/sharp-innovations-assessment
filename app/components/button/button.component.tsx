@@ -5,11 +5,12 @@ import { FaChevronRight } from 'react-icons/fa';
 type Props = {
   text: string;
   href: string;
+  className?: string;
 };
 
 const Button = (props: Props) => {
   return (
-    <Link href={props.href}>
+    <Link href={props.href} className={`${props.className}`}>
       <div className={styles.button}>
         {props.text}
         <div className={styles.icon}>

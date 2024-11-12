@@ -27,15 +27,17 @@ const IntroView = (props: Props) => {
         <Image
           src={`/sharp-innovations-assessment/homeCar1.svg`}
           height={500}
-          width={700}
-          layout="responsive"
+          width={680}
+          className={styles.car1}
+          // layout="fill"
           alt="car 1"
         ></Image>
         <Image
           src={`/sharp-innovations-assessment/homeCar2.svg`}
-          height={500}
-          width={900}
-          layout="responsive"
+          height={440}
+          width={800}
+          className={styles.car2}
+          // layout="fill"
           alt="car 2"
         ></Image>
       </div>
