@@ -1,0 +1,77 @@
+{
+  "crewCabPickup": {
+    "title": "Crew Cab Pickup 4x4",
+    "id": "1",
+    "list": [
+      {
+        "image": "/vehicles/vehicle1.svg",
+        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
+        "payload": "2,660 lbs",
+        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
+        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      },
+      {
+        "image": "/vehicles/vehicle1.svg",
+        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
+        "payload": "2,660 lbs",
+        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
+        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      },
+      {
+        "image": "/vehicles/vehicle1.svg",
+        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
+        "payload": "2,660 lbs",
+        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
+        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      },
+      {
+        "image": "/vehicles/vehicle1.svg",
+        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
+        "payload": "2,660 lbs",
+        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
+        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      },
+      {
+        "image": "/vehicles/vehicle1.svg",
+        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
+        "payload": "2,660 lbs",
+        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
+        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      },
+      {
+        "image": "/vehicles/vehicle1.svg",
+        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
+        "payload": "2,660 lbs",
+        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
+        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      }
+    ]
+  },
+  "crewCabFlatbed": {
+    "title": "Crew Cab Flatbed 4x4",
+    "id": "2",
+    "list": [
+      {
+        "image": "/vehicles/vehicle2.svg",
+        "title": "RAM 2500 SLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 17,150 lbs.",
+        "payload": "2,330 lbs.",
+        "safetyFeatures": "Roadside Safety Kit, Rear Park Assist System, Back up Camera",
+        "engineTransmission": "6.7 L Cummins Turbo Engine, Automatic Transmission",
+        "fuel": "Diesel"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../globals.scss';
+
+.button {
+  height: 20px;
+  width: fit-content;
+  background-color: $colorGreen;
+  padding: 10px 0 10px 10px;
+  transform: skew(-10deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: $colorWhite;
+  .icon {
+    padding: 10px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorBlue;
+  }
+}

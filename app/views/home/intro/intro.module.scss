@@ -1,0 +1,59 @@
+@import '../../../globals.scss';
+.container {
+  background-color: $colorWhite;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 600px;
+  position: relative;
+  margin-bottom: 100px;
+
+  &::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  .contentContainer {
+    position: relative;
+
+    text-align: center;
+    color: $colorWhite;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .headerText {
+      text-transform: uppercase;
+      font-size: $fz-lg;
+      font-weight: 900;
+      font-style: italic;
+      margin-bottom: 10px;
+      span {
+        color: $colorGreen;
+      }
+    }
+    .descriptionText {
+      font-weight: 600;
+      font-size: $fz-xxs;
+      margin-bottom: 25px;
+    }
+  }
+
+  .carContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 45vw;
+  }
+}

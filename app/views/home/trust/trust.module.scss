@@ -1,0 +1,52 @@
+@import '../../../globals.scss';
+.container {
+  background-color: $colorBlack;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: $colorWhite;
+  .info {
+    width: 70%;
+    .title {
+      text-align: center;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $colorWhite;
+      font-style: italic;
+    }
+    .description {
+      text-align: center;
+      line-height: 25px;
+    }
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(140px, 200px));
+    gap: 40px 60px;
+
+    .item {
+      transform: skew(-15deg);
+      .imageContainer {
+        background-color: $colorGreen;
+
+        .image {
+          position: relative;
+          transform: skew(12deg);
+          top: -6px;
+          left: -45px;
+        }
+      }
+      .textContainer {
+        background-color: $colorBlue;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 20px;
+      }
+    }
+  }
+}

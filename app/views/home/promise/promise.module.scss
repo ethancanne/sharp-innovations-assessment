@@ -1,0 +1,42 @@
+@import '../../../globals.scss';
+.container {
+  background-color: $colorWhite;
+  padding: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+
+  .infoContainer {
+    flex: 1;
+    .title {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-style: italic;
+      font-size: $fz-lg;
+    }
+    .description {
+      line-height: 30px;
+      font-weight: 300;
+    }
+    .buttonContainer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
+  }
+
+  .imageContainer {
+    flex: 1;
+    transform: skew(-10deg);
+    box-shadow: 10px 10px $colorBlue;
+    padding: 20px;
+    height: 300px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
