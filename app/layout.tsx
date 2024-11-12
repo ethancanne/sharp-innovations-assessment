@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.scss';
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
+import { Suspense } from 'react';
 
 const montFont = localFont({
   src: './fonts/Montserrat-VariableFont_wght.ttf',
@@ -30,7 +31,7 @@ export default function RootLayout({
       <body className={`${montFont.variable} ${montItalicFont.variable} body`}>
         <Header />
 
-        {children}
+        <Suspense>{children}</Suspense>
         <Footer />
       </body>
     </html>
