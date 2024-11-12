@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Logo from '../logo/logo.component';
 import vehicleLineupData from '../../data/vehicle-lineup-data.json';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 
 type Props = {};
 
@@ -50,22 +51,24 @@ const Header = (props: Props) => {
                 <Link href={item.href} className={styles.navItem}>
                   {item.name}
                 </Link>
-                {item.subNav ? (
-                  <div className={styles.subNavContainer}>
-                    {item.subNav.map((subNavItem) => (
-                      <Link
-                        href={subNavItem.href}
-                        className={`${styles.subNavItem} ${
-                          lineupId === subNavItem.id && styles.selected
-                        }`}
-                      >
-                        {subNavItem.name}
-                      </Link>
-                    ))}
-                  </div>
-                ) : (
-                  <></>
-                )}
+                <Suspense fallback={<div>Loading...</div>}>
+                  {item.subNav ? (
+                    <div className={styles.subNavContainer}>
+                      {item.subNav.map((subNavItem) => (
+                        <Link
+                          href={subNavItem.href}
+                          className={`${styles.subNavItem} ${
+                            lineupId === subNavItem.id && styles.selected
+                          }`}
+                        >
+                          {subNavItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <></>
+                  )}
+                </Suspense>
               </div>
             );
           })}
