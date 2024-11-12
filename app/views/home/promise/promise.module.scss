@@ -1,6 +1,6 @@
-@import '../../../globals.scss';
+@use '../../../globals.scss';
 .container {
-  background-color: $colorWhite;
+  background-color: globals.$colorWhite;
   padding: 90px;
 
   display: flex;
@@ -14,7 +14,7 @@
       text-transform: uppercase;
       font-weight: 800;
       font-style: italic;
-      font-size: $fz-lg;
+      font-size: globals.$fz-lg;
     }
     .description {
       line-height: 30px;
@@ -31,7 +31,7 @@
   .imageContainer {
     flex: 1;
     transform: skew(-10deg);
-    box-shadow: 10px 10px $colorBlue;
+    box-shadow: 10px 10px globals.$colorBlue;
     padding: 20px;
     height: 300px;
 

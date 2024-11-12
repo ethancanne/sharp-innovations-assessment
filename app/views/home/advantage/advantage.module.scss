@@ -1,6 +1,6 @@
-@import '../../../globals.scss';
+@use '../../../globals.scss';
 .container {
-  background-color: $colorBlack;
+  background-color: globals.$colorBlack;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
     text-align: center;
     font-weight: 900;
     text-transform: uppercase;
-    color: $colorWhite;
+    color: globals.$colorWhite;
     font-style: italic;
   }
   .items {
@@ -28,8 +28,8 @@
 
       width: 200px;
       height: 140px;
-      background-color: $colorBlue;
-      color: $colorWhite;
+      background-color: globals.$colorBlue;
+      color: globals.$colorWhite;
 
       transform: skew(-10deg);
       padding: 10px 20px 10px 70px;
@@ -41,9 +41,9 @@
         left: -40px;
         height: 90px;
         width: 90px;
-        font-size: $fz-lg;
-        background-color: $colorGreen;
-        color: $colorWhite;
+        font-size: globals.$fz-lg;
+        background-color: globals.$colorGreen;
+        color: globals.$colorWhite;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,10 +54,10 @@
         .itemTitle {
           font-weight: 600;
           text-transform: uppercase;
-          font-size: $fz-xs;
+          font-size: globals.$fz-xs;
         }
         .itemDescription {
-          font-size: $fz-xxs;
+          font-size: globals.$fz-xxs;
         }
       }
     }
