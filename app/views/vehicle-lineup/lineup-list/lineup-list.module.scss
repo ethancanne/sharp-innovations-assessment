@@ -1,0 +1,50 @@
+@import '../../../globals.scss';
+.container {
+  padding: 0px 200px;
+  margin-top: -70px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 60px;
+
+  .vehicleContainer {
+    background-color: $colorLightGreen;
+    padding: 15px;
+    .imageContainer {
+      margin: -15px;
+      border-bottom: none;
+      position: relative;
+      .image {
+        position: relative;
+        z-index: 3;
+      }
+      &::before {
+        content: '';
+        background-color: white;
+        width: 104.5%;
+        height: 90px;
+        position: absolute;
+        z-index: 0;
+        top: -10px;
+        left: -10px;
+      }
+    }
+    .title {
+      font-size: $fz-md;
+      font-style: italic;
+      margin-top: 25px;
+    }
+    .detail {
+      .detailTitle {
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 2px;
+      }
+    }
+    hr {
+      display: block;
+      border: $colorGreen 0.3px solid;
+    }
+  }
+}

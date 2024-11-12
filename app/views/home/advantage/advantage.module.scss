@@ -1,0 +1,65 @@
+@import '../../../globals.scss';
+.container {
+  background-color: $colorBlack;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  .title {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $colorWhite;
+    font-style: italic;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 200px;
+      height: 140px;
+      background-color: $colorBlue;
+      color: $colorWhite;
+
+      transform: skew(-10deg);
+      padding: 10px 20px 10px 70px;
+
+      .itemIcon {
+        transform: skew(10deg);
+
+        position: absolute;
+        left: -40px;
+        height: 90px;
+        width: 90px;
+        font-size: $fz-lg;
+        background-color: $colorGreen;
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .itemDetails {
+        .itemTitle {
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: $fz-xs;
+        }
+        .itemDescription {
+          font-size: $fz-xxs;
+        }
+      }
+    }
+  }
+}
