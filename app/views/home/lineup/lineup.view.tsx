@@ -30,7 +30,7 @@ const LineUp = (props: Props) => {
       <div
         className={styles.imageContainer}
         style={{
-          backgroundImage: 'url(/sharp-innovations-assessment/lineupImage.jpg)',
+          backgroundImage: 'url(/sharp-innovations-assessment/lineupImage.JPG)',
         }}
       ></div>
     </div>
