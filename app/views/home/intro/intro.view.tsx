@@ -9,7 +9,8 @@ const IntroView = (props: Props) => {
     <div
       className={styles.container}
       style={{
-        backgroundImage: 'url(/homeBackground.svg)',
+        backgroundImage:
+          'url(/sharp-innovations-assessment/homeBackground.svg)',
       }}
     >
       <div className={styles.contentContainer}>
@@ -24,14 +25,14 @@ const IntroView = (props: Props) => {
       </div>
       <div className={styles.carContainer}>
         <Image
-          src="/homeCar1.svg"
+          src={`/sharp-innovations-assessment/homeCar1.svg`}
           height={500}
           width={700}
           layout="responsive"
           alt="car 1"
         ></Image>
         <Image
-          src="/homeCar2.svg"
+          src={`/sharp-innovations-assessment/homeCar2.svg`}
           height={500}
           width={900}
           layout="responsive"

@@ -28,7 +28,7 @@ const Promise = (props: Props) => {
       <div
         className={styles.imageContainer}
         style={{
-          backgroundImage: 'url(/promiseCar.jpg)',
+          backgroundImage: 'url(/sharp-innovations-assessment/promiseCar.jpg)',
         }}
       ></div>
     </div>

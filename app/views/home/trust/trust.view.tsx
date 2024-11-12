@@ -11,7 +11,7 @@ const TrustItem = (props: AdvantageItemProps) => {
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src={props.image}
+          src={'/sharp-innovations-assessment/' + props.image}
           width={250}
           height={120}
           alt="trust"
@@ -74,7 +74,7 @@ const Trust = () => {
       </div>
       <div className={styles.items}>
         {trustItemData.map((item) => {
-          return <TrustItem {...item} key={item.text}/>;
+          return <TrustItem {...item} key={item.text} />;
         })}
       </div>
     </div>

@@ -16,7 +16,7 @@ const Vehicle = (props: VehicleProps) => {
     <div className={styles.vehicleContainer}>
       <div className={styles.imageContainer}>
         <Image
-          src={props.image}
+          src={'/sharp-innovations-assessment/' + props.image}
           className={styles.image}
           width={100}
           height={100}

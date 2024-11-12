@@ -4,7 +4,12 @@ import Image from 'next/image';
 const Logo = () => {
   return (
     <div className={styles.logo}>
-      <Image src="/logo.svg" alt="logo" width={180} height={100} />
+      <Image
+        src="/sharp-innovations-assessment/logo.svg"
+        alt="logo"
+        width={180}
+        height={100}
+      />
     </div>
   );
 };

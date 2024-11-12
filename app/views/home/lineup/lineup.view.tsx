@@ -24,13 +24,13 @@ const LineUp = (props: Props) => {
           service, you’ll get the safest, most capable equipment available.
         </p>
         <div className={styles.buttonContainer}>
-          <Button text="See the trucks" href="vehicle-lineup" />
+          <Button text="See the trucks" href="/vehicle-lineup" />
         </div>
       </div>
       <div
         className={styles.imageContainer}
         style={{
-          backgroundImage: 'url(/lineupImage.jpg)',
+          backgroundImage: 'url(/sharp-innovations-assessment/lineupImage.jpg)',
         }}
       ></div>
     </div>

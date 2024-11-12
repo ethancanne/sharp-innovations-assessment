@@ -11,7 +11,9 @@ const PageHeader = (props: Props) => {
     <div
       className={styles.container}
       style={{
-        backgroundImage: `url(${props.backgroundImage})`,
+        backgroundImage: `url(${
+          '/sharp-innovations-assessment/' + props.backgroundImage
+        })`,
       }}
     >
       <div className={styles.contentContainer}>
