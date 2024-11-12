@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
   },
+  basePath: '/sharp-innovations-assessment',
 };
 
 export default nextConfig;
