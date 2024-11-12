@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import styles from './header.module.scss';
 import Link from 'next/link';
 import Logo from '../logo/logo.component';
@@ -31,27 +30,27 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <div className={styles.container}>
-      <div className={styles.logoContainer}>
-        <Link href={'/'}>
-          <Logo />
-        </Link>
-      </div>
-      <div className={styles.navContainer}>
-        <div className={styles.contact}>
-          <div className={styles.number}>(800) 826-7368</div>
-          <div className={styles.login}>
-            <Link href={'/login'}>customer login</Link>
-          </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className={styles.container}>
+        <div className={styles.logoContainer}>
+          <Link href={'/'}>
+            <Logo />
+          </Link>
         </div>
-        <div className={styles.navigation}>
-          {navigationData.map((item) => {
-            return (
-              <div className={styles.navItemContainer}>
-                <Link href={item.href} className={styles.navItem}>
-                  {item.name}
-                </Link>
-                <Suspense fallback={<div>Loading...</div>}>
+        <div className={styles.navContainer}>
+          <div className={styles.contact}>
+            <div className={styles.number}>(800) 826-7368</div>
+            <div className={styles.login}>
+              <Link href={'/login'}>customer login</Link>
+            </div>
+          </div>
+          <div className={styles.navigation}>
+            {navigationData.map((item) => {
+              return (
+                <div className={styles.navItemContainer}>
+                  <Link href={item.href} className={styles.navItem}>
+                    {item.name}
+                  </Link>
                   {item.subNav ? (
                     <div className={styles.subNavContainer}>
                       {item.subNav.map((subNavItem) => (
@@ -68,13 +67,13 @@ const Header = (props: Props) => {
                   ) : (
                     <></>
                   )}
-                </Suspense>
-              </div>
-            );
-          })}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </Suspense>
   );
 };
 
