@@ -13,15 +13,16 @@ export default function VehicleLineup() {
     Object.values(vehicleLineupData)[0];
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <div>
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
         <PageHeader
           backgroundImage="/lineupHeaderImg.svg"
           title={vehicleData.title}
           subTitle="Adjust the size of your fleet to meet the demands of your business."
         />
-        <LineupList vehicleList={vehicleData?.list!} />
-      </div>
-    </Suspense>
+      </Suspense>
+
+      <LineupList vehicleList={vehicleData?.list!} />
+    </div>
   );
 }

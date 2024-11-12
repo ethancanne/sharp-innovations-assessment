@@ -29,10 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montFont.variable} ${montItalicFont.variable} body`}>
-        <Header />
+        <Suspense>
+          <Header />
 
-        <Suspense>{children}</Suspense>
-        <Footer />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
