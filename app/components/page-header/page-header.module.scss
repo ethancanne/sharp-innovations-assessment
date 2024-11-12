@@ -1,6 +1,6 @@
-@import '../../globals.scss';
+@use '../../globals.scss';
 .container {
-  background-color: $colorWhite;
+  background-color: globals.$colorWhite;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
     position: relative;
 
     text-align: center;
-    color: $colorWhite;
+    color: globals.$colorWhite;
     width: 900px;
     display: flex;
     align-items: center;
@@ -33,17 +33,17 @@
 
     .title {
       text-transform: uppercase;
-      font-size: $fz-lg;
+      font-size: globals.$fz-lg;
       font-weight: 900;
       font-style: italic;
       margin-bottom: 0px;
       span {
-        color: $colorGreen;
+        color: globals.$colorGreen;
       }
     }
     .subTitle {
       font-weight: 200;
-      font-size: $fz-xxs;
+      font-size: globals.$fz-xxs;
       font-style: italic;
     }
   }

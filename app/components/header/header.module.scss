@@ -1,14 +1,15 @@
-@import '../../globals.scss';
+@use '../../globals.scss';
 .container {
   display: flex;
   align-items: center;
-  background-color: $colorBlack;
+  background-color: globals.$colorBlack;
   padding: 0 30px 0 30px;
   height: 100px;
 
   .logoContainer {
-    flex: 1;
+    flex: 0.3;
     display: flex;
+    justify-content: center;
   }
   .navContainer {
     flex: 1;
@@ -21,15 +22,15 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      font-size: $fz-xxxs;
+      font-size: globals.$fz-xxxs;
       gap: 20px;
 
       .login {
         text-transform: uppercase;
-        color: $colorLightBlue;
+        color: globals.$colorLightBlue;
       }
       .number {
-        color: $colorWhite;
+        color: globals.$colorWhite;
       }
     }
 
@@ -39,8 +40,8 @@
       gap: 15px;
       .navItemContainer {
         .navItem {
-          color: $colorWhite;
-          font-size: $fz-xxs;
+          color: globals.$colorWhite;
+          font-size: globals.$fz-xxs;
           text-transform: uppercase;
           position: relative;
         }
@@ -48,21 +49,21 @@
         .subNavContainer {
           opacity: 0;
 
-          background-color: $colorBlueAlt;
+          background-color: globals.$colorBlueAlt;
           padding: 10px;
           position: absolute;
           margin-top: 10px;
           z-index: 1;
-          display:flex;
+          display: flex;
           flex-direction: column;
           gap: 10px;
           .subNavItem {
-            color: $colorWhite;
-            font-size: $fz-xxs;
+            color: globals.$colorWhite;
+            font-size: globals.$fz-xxs;
             font-weight: 400;
             text-transform: uppercase;
 
-            &.selected{
+            &.selected {
               font-weight: 900;
             }
           }
@@ -73,7 +74,7 @@
             opacity: 1;
           }
           .navItem {
-            border-bottom: $colorGreen solid 4px;
+            border-bottom: globals.$colorGreen solid 4px;
             padding-bottom: 7px;
           }
         }

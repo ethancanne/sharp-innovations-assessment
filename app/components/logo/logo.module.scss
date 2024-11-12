@@ -1,10 +1,10 @@
-@import '../../globals.scss';
+@use '../../globals.scss';
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 230px;
   transform: skew(-10deg);
-  background-color: $colorWhite;
-  box-shadow: $colorGreen 10px 0px;
+  background-color: globals.$colorWhite;
+  box-shadow: globals.$colorGreen 10px 0px;
 }

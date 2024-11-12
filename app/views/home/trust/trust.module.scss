@@ -1,20 +1,20 @@
-@import '../../../globals.scss';
+@use '../../../globals.scss';
 .container {
-  background-color: $colorBlack;
+  background-color: globals.$colorBlack;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  color: $colorWhite;
+  color: globals.$colorWhite;
   .info {
     width: 70%;
     .title {
       text-align: center;
       font-weight: 900;
       text-transform: uppercase;
-      color: $colorWhite;
+      color: globals.$colorWhite;
       font-style: italic;
     }
     .description {
@@ -31,7 +31,7 @@
     .item {
       transform: skew(-15deg);
       .imageContainer {
-        background-color: $colorGreen;
+        background-color: globals.$colorGreen;
 
         .image {
           position: relative;
@@ -41,7 +41,7 @@
         }
       }
       .textContainer {
-        background-color: $colorBlue;
+        background-color: globals.$colorBlue;
         text-align: center;
         text-transform: uppercase;
         font-weight: 600;

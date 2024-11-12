@@ -1,6 +1,6 @@
-@import '../../globals.scss';
+@use '../../globals.scss';
 .container {
-  background-color: $colorBlack;
+  background-color: globals.$colorBlack;
   padding: 100px;
   .content {
     display: flex;
@@ -11,16 +11,16 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      font-size: $fz-xs;
+      font-size: globals.$fz-xs;
 
       .title {
-        color: $colorGreen;
+        color: globals.$colorGreen;
         font-style: italic;
         text-transform: uppercase;
         font-weight: 700;
       }
       .data {
-        color: $colorWhite;
+        color: globals.$colorWhite;
         display: flex;
         flex-direction: column;
         font-weight: 300;
