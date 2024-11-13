@@ -21,7 +21,7 @@ const IntroView = (props: Props) => {
           You need trucks and need them quickly. We deliver them in seven to ten
           days nationwide, sometimes even the next day.
         </div>
-        <Button text="browse our vehicle lineup" href="/vehicle-lineup" />
+        <Button text="browse our vehicle lineup" href="/vehicle-lineup?id=1" />
       </div>
       <div className={styles.carContainer}>
         <Image

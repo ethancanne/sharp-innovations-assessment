@@ -24,7 +24,7 @@ const LineUp = (props: Props) => {
           service, you’ll get the safest, most capable equipment available.
         </p>
         <div className={styles.buttonContainer}>
-          <Button text="See the trucks" href="/vehicle-lineup" />
+          <Button text="See the trucks" href="/vehicle-lineup?id=1" />
         </div>
       </div>
       <div

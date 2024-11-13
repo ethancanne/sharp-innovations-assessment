@@ -27,35 +27,35 @@ const Trust = () => {
   const trustItemData = [
     {
       text: 'wind',
-      image: '/windImg.svg',
+      image: '/trust/windImg.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'oil & natural gas',
+      image: '/trust/oilGasImg.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'solar',
+      image: '/trust/solar.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'wireless & telecom',
+      image: '/trust/wirelessTelecom.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'environmental',
+      image: '/trust/environmental.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'construction',
+      image: '/trust/construction.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'snow & ice removal',
+      image: '/trust/snowIce.svg',
     },
     {
-      text: 'wind',
-      image: '/windImg.svg',
+      text: 'miltary',
+      image: '/trust/miltary.svg',
     },
   ];
   return (

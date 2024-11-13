@@ -50,7 +50,7 @@ const Advantage = () => {
           return <AdvantageItem {...item} key={i} />;
         })}
       </div>
-      <Button text="Rent Trucks Now" href="/vehicle-lineup" />
+      <Button text="Rent Trucks Now" href="/vehicle-lineup?id=1" />
     </div>
   );
 };

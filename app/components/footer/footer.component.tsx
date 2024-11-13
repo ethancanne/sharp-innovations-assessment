@@ -29,7 +29,7 @@ const Footer = (props: Props) => {
     {
       title: 'quick links',
       data: [
-        { text: 'Vehicle Lineup', isLink: true, href: '/vehicle-lineup' },
+        { text: 'Vehicle Lineup', isLink: true, href: '/vehicle-lineup?id=1' },
         { text: 'Our Services', isLink: true, href: '/our-services' },
         { text: 'Customer Login', isLink: true, href: '/customer-login' },
         { text: 'Contact Us', isLink: true, href: '/contact-us' },

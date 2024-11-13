@@ -13,49 +13,49 @@
         "fuel": "Diesel"
       },
       {
-        "image": "/vehicles/vehicle1.svg",
-        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
-        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
-        "payload": "2,660 lbs",
-        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
-        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "image": "/vehicles/vehicle2.svg",
+        "title": "RAM 2500 SLT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 17,150 lbs.",
+        "payload": "2,330 lbs.",
+        "safetyFeatures": "Roadside Safety Kit, Rear Park Assist System, Back up Camera",
+        "engineTransmission": "6.7 L Cummins Turbo Engine, Automatic Transmission",
         "fuel": "Diesel"
       },
       {
-        "image": "/vehicles/vehicle1.svg",
-        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
-        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
-        "payload": "2,660 lbs",
-        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
-        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
+        "image": "/vehicles/vehicle3.svg",
+        "title": "Chevrolet Silverado 2500 LT 4x4 Crew Cab Pick Up",
+        "maxTowingFeatures": "Trailer Hitch, Trailer Brake Control, Max Towing 13,000 lbs.",
+        "payload": "3,658 lbs.",
+        "safetyFeatures": "Rearview Camera, Exterior Back Up Alarm",
+        "engineTransmission": "6.6 L DURAMAX Turbo Engine, ALLISON Transmission",
         "fuel": "Diesel"
       },
       {
-        "image": "/vehicles/vehicle1.svg",
-        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
-        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
-        "payload": "2,660 lbs",
-        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
-        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
-        "fuel": "Diesel"
+        "image": "/vehicles/vehicle4.svg",
+        "title": "Chevrolet Silverado 1500 LT 4x4 Crew Cab",
+        "maxTowingFeatures": "Trailer Hitch, Trailer Brake Control, Max Towing 6,100 lbs.",
+        "payload": "1,730 lbs.",
+        "safetyFeatures": "Rearview Camera",
+        "engineTransmission": "5.3 L ECOTEC3 V8 Engine, Automatic Transmission",
+        "fuel": "Gas"
       },
       {
-        "image": "/vehicles/vehicle1.svg",
-        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
-        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
-        "payload": "2,660 lbs",
-        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
-        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
-        "fuel": "Diesel"
+        "image": "/vehicles/vehicle5.svg",
+        "title": "Ford F-150 4x4 SuperCrew Cab XLT",
+        "maxTowingFeatures": "Trailer Hitch, Trailer Sway Control, Max Towing 7,000 lbs.",
+        "payload": "2,050 lbs.",
+        "safetyFeatures": "Rearview Camera, ABS Brakes, Traction Control, Ext Back up Alarm",
+        "engineTransmission": "3.5 L V6 EcoBoost Engine, 10 speed Automatic Transmission",
+        "fuel": "Gas"
       },
       {
-        "image": "/vehicles/vehicle1.svg",
-        "title": "Ford F250 XLT 4x4 Crew Cab Pick Up",
-        "maxTowingFeatures": "Trailer Hitch, Tow Hooks, Trailer Brake Control, Max. Towing 14,700 lbs",
-        "payload": "2,660 lbs",
-        "safetyFeatures": "Fleet Telematics, Rear View Camera, Exterior Reverse Alarm",
-        "engineTransmission": "6.7 L DOHC Power Stroke Turbo Engine, Automatic Transmission",
-        "fuel": "Diesel"
+        "image": "/vehicles/vehicle6.svg",
+        "title": "Ram 1500 Big Horn 4x4 Crew Cab",
+        "maxTowingFeatures": "Trailer Hitch, Trailer Sway Damping, Max Towing 8,190 lbs.",
+        "payload": "1,800 lbs.",
+        "safetyFeatures": "Rearview Camera, ABS Brakes, Driveline Control Alarm",
+        "engineTransmission": "5.7 L HEMI V8 Engine, 8 Speed Automatic Transmission",
+        "fuel": "Gas"
       }
     ]
   },
